@@ -73,7 +73,7 @@ const Index = () => {
       <section className="container mx-auto px-6 py-16 border-t border-border">
         <div className="max-w-xl mx-auto text-center">
           <p className="font-serif text-lg text-muted-foreground italic leading-relaxed mb-6">
-            "Writing under the pen name Ojan, the focus is on subtle emotions, 
+            "Writing under the pen name 'Lumi', the focus is on subtle emotions, 
             grounded thoughts, and moments that often go unnoticed."
           </p>
           <Link
