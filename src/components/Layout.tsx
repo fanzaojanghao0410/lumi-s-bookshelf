@@ -15,7 +15,7 @@ const Layout = ({ children }: LayoutProps) => {
           {/* Social Links */}
           <div className="flex items-center justify-center gap-6 mb-6">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/aahmd.fznn"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-accent transition-colors duration-300"
@@ -29,7 +29,7 @@ const Layout = ({ children }: LayoutProps) => {
               />
             </a>
             <a
-              href="https://wattpad.com"
+              href="https://wattpad.com/thecopilotmaverick"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-accent transition-colors duration-300"
