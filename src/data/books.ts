@@ -13,7 +13,7 @@ export const books: Book[] = [
     title: "Ada Jogja di Bandung",
     author: "Ojan",
     coverUrl: adaJogjaDiBandung,
-    googleDocsUrl: "https://docs.google.com/document/d/19aj5idgNEBKyfCeaXVtJt6AwpY1h9whHry3_IeHXSAA/edit?usp=sharing",
+    googleDocsUrl: "https://docs.google.com/document/d/18fsNRtNheOfWQxqn_axfnNUfGLmDcoRYoDFiWWWaUfo/edit?usp=sharing",
     description: "A collection of thoughts gathered in the stillness before dawn.",
   },
   {
