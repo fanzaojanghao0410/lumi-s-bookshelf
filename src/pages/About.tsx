@@ -24,11 +24,6 @@ const About = () => {
                 meant to be rushed.
               </p>
 
-              <p>
-                This website is designed as a quiet place—where words, scripts, and reflections 
-                can be read slowly, like opening a physical book page by page.
-              </p>
-
               <div className="border-l-2 border-accent pl-6 my-8">
                 <p className="italic text-muted-foreground">
                   "The works shared here are not meant to impress, but to accompany."
