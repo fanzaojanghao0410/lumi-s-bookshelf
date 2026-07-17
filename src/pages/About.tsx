@@ -56,7 +56,7 @@ const About = () => {
                   <div className="absolute inset-0 ring-1 ring-inset ring-foreground/10 pointer-events-none" aria-hidden="true" />
                 </div>
                 <p className="mt-4 font-serif italic text-[13px] text-muted-foreground text-center">
-                  lumi — pen name of Celestial Copilot
+                  Ojan - Writer
                 </p>
               </div>
             </motion.div>
@@ -70,8 +70,7 @@ const About = () => {
               <p className="first-letter:text-5xl first-letter:font-medium first-letter:text-accent first-letter:mr-2 first-letter:float-left first-letter:leading-[0.9]">
                 Hello. I write under the name <em className="text-accent not-italic">lumi</em>, a
                 pen name chosen to make room for quiet, thoughtful words. Behind this
-                space stands <strong className="font-medium">Onable Scripts</strong> — a
-                companion to stories, believing that the best writing does not need to rush.
+                space stands <strong className="font-medium">Onable Scripts</strong>.
               </p>
 
               <p className="text-muted-foreground">
