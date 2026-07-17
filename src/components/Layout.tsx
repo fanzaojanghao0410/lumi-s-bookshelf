@@ -43,8 +43,8 @@ const Layout = ({ children }: LayoutProps) => {
               </a>
             </div>
 
-            <p className="font-sans text-[11px] tracking-[0.18em] uppercase text-muted-foreground/80">
-              By Ojan · Onable Scripts
+            <p className="font-serif italic text-[13px] text-muted-foreground/80">
+              by Ojan · Onable Scripts
             </p>
           </div>
         </div>

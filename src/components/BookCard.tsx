@@ -46,7 +46,7 @@ const BookCard = ({ book, index = 0 }: BookCardProps) => {
           <h3 className="font-serif text-[15px] leading-snug text-foreground line-clamp-2">
             {book.title}
           </h3>
-          <div className="flex items-center gap-2 text-[11px] tracking-[0.14em] uppercase text-muted-foreground">
+          <div className="flex items-center gap-2 text-[12px] font-serif italic text-muted-foreground">
             <span>by {book.author}</span>
             {book.status && (
               <>

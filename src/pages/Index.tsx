@@ -38,7 +38,7 @@ const Index = () => {
             >
               <span className="h-px w-8 bg-border" />
               <BrandMark size={16} className="text-accent" />
-              <span className="font-sans text-[11px] tracking-[0.22em] uppercase">A personal library</span>
+              <span className="font-serif italic text-sm">A personal library</span>
               <BrandMark size={16} className="text-accent" />
               <span className="h-px w-8 bg-border" />
             </motion.div>
@@ -97,7 +97,7 @@ const Index = () => {
             transition={{ delay: 1.2, duration: 1 }}
             className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground/70"
           >
-            <span className="font-sans text-[10px] tracking-[0.3em] uppercase">Turn the page</span>
+            <span className="font-serif italic text-xs">Turn the page</span>
             <motion.span
               animate={{ y: [0, 6, 0] }}
               transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
@@ -118,7 +118,7 @@ const Index = () => {
         >
           <div className="flex items-center gap-3 mb-8 text-muted-foreground">
             <span className="h-px flex-1 bg-border" />
-            <span className="font-sans text-[10px] tracking-[0.3em] uppercase">Preface</span>
+            <span className="font-serif italic text-xs">Preface</span>
             <span className="h-px flex-1 bg-border" />
           </div>
 
@@ -183,7 +183,7 @@ const Index = () => {
             className="flex items-end justify-between mb-12"
           >
             <div>
-              <p className="font-sans text-[11px] tracking-[0.22em] uppercase text-muted-foreground mb-3">
+              <p className="font-serif italic text-sm text-muted-foreground mb-3">
                 On the shelf
               </p>
               <h2 className="font-serif text-3xl md:text-4xl text-foreground">Recent works</h2>
@@ -218,7 +218,7 @@ const Index = () => {
             “The best writing does not need to rush.
             <br className="hidden md:block" /> It waits with you, page by page.”
           </blockquote>
-          <p className="mt-8 font-sans text-[11px] tracking-[0.24em] uppercase text-muted-foreground">
+          <p className="mt-8 font-serif italic text-sm text-muted-foreground">
             — lumi
           </p>
         </motion.div>

@@ -21,7 +21,7 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <p className="font-sans text-[11px] tracking-[0.24em] uppercase text-muted-foreground mb-4">
+            <p className="font-serif italic text-sm text-muted-foreground mb-4">
               About
             </p>
             <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-3">
@@ -40,19 +40,23 @@ const About = () => {
             <motion.div
               {...fadeUp}
               transition={{ duration: 0.9 }}
-              className="md:col-span-5"
+              className="md:col-span-4 mx-auto md:mx-0 w-full max-w-[240px] md:max-w-none"
             >
               <div className="relative">
-                <div className="absolute -inset-3 bg-accent/10 rounded-sm rotate-[-1.5deg]" aria-hidden="true" />
+                <div className="absolute -inset-2 bg-accent/10 rounded-sm rotate-[-1.5deg]" aria-hidden="true" />
                 <div className="relative aspect-[3/4] overflow-hidden rounded-sm book-shadow">
                   <img
                     src={authorPhoto}
                     alt="lumi — Celestial Copilot"
                     className="w-full h-full object-cover"
                   />
+                  {/* soft warm veil so the photo blends with the page */}
+                  <div className="absolute inset-0 bg-[hsl(var(--background))]/25 mix-blend-multiply pointer-events-none" aria-hidden="true" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-accent/15 via-transparent to-background/10 pointer-events-none" aria-hidden="true" />
+                  <div className="absolute inset-0 ring-1 ring-inset ring-foreground/10 pointer-events-none" aria-hidden="true" />
                 </div>
-                <p className="mt-4 font-sans text-[11px] tracking-[0.22em] uppercase text-muted-foreground text-center">
-                  lumi · pen name of Celestial Copilot
+                <p className="mt-4 font-serif italic text-[13px] text-muted-foreground text-center">
+                  lumi — pen name of Celestial Copilot
                 </p>
               </div>
             </motion.div>
@@ -61,7 +65,7 @@ const About = () => {
             <motion.div
               {...fadeUp}
               transition={{ duration: 0.9, delay: 0.15 }}
-              className="md:col-span-7 space-y-6 font-serif text-[1.1rem] md:text-[1.15rem] leading-[1.75] text-foreground"
+              className="md:col-span-8 space-y-6 font-serif text-[1.05rem] md:text-[1.15rem] leading-[1.75] text-foreground"
             >
               <p className="first-letter:text-5xl first-letter:font-medium first-letter:text-accent first-letter:mr-2 first-letter:float-left first-letter:leading-[0.9]">
                 Hello. I write under the name <em className="text-accent not-italic">lumi</em>, a
@@ -107,7 +111,7 @@ const About = () => {
             <div className="pt-10 border-t border-border/60 flex flex-col items-center gap-2">
               <BrandMark size={22} className="text-accent" />
               <p className="font-serif italic text-lg text-foreground">— lumi</p>
-              <p className="font-sans text-[10px] tracking-[0.28em] uppercase text-muted-foreground">
+              <p className="font-serif italic text-xs text-muted-foreground">
                 Celestial Copilot
               </p>
             </div>

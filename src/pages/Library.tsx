@@ -16,8 +16,8 @@ const Library = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <p className="font-sans text-[11px] tracking-[0.24em] uppercase text-muted-foreground mb-4">
-              The Library
+            <p className="font-serif italic text-sm text-muted-foreground mb-4">
+              The library
             </p>
             <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4">
               A quiet shelf of stories
