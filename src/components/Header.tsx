@@ -1,14 +1,14 @@
 import { Link, useLocation } from "react-router-dom";
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
+import BrandMark from "./BrandMark";
 
 const Header = () => {
   const location = useLocation();
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    const isDarkMode = document.documentElement.classList.contains("dark");
-    setIsDark(isDarkMode);
+    setIsDark(document.documentElement.classList.contains("dark"));
   }, []);
 
   const toggleDarkMode = () => {
@@ -25,30 +25,26 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/85 backdrop-blur-md border-b border-border/70">
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
           <Link
             to="/"
-            className="flex items-center gap-3 font-serif text-xl font-medium tracking-wide text-foreground hover:text-accent transition-colors"
+            className="flex items-center gap-2.5 text-foreground hover:text-accent transition-colors"
           >
-            <img
-              src="/logo.png"
-              alt="Copilot Scripts"
-              className="h-8 w-auto"
-            />
-            <span className="hidden sm:inline">Copilot Scripts</span>
+            <BrandMark size={22} className="text-accent" />
+            <span className="font-serif text-lg tracking-tight">Onable Scripts</span>
           </Link>
 
-          <div className="flex items-center gap-8">
-            <ul className="flex items-center gap-6">
+          <div className="flex items-center gap-6 md:gap-8">
+            <ul className="flex items-center gap-5 md:gap-7">
               {navLinks.map((link) => (
                 <li key={link.path}>
                   <Link
                     to={link.path}
                     className={`font-sans text-sm tracking-wide transition-colors ${
                       isActive(link.path)
-                        ? "text-foreground font-medium"
+                        ? "text-foreground"
                         : "text-muted-foreground hover:text-foreground"
                     }`}
                   >
@@ -63,7 +59,7 @@ const Header = () => {
               className="p-2 rounded-full hover:bg-secondary transition-colors text-muted-foreground hover:text-foreground"
               aria-label="Toggle dark mode"
             >
-              {isDark ? <Sun size={18} /> : <Moon size={18} />}
+              {isDark ? <Sun size={17} /> : <Moon size={17} />}
             </button>
           </div>
         </nav>
