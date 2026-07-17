@@ -1,5 +1,5 @@
-import { ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export interface Book {
   id: string;
@@ -8,48 +8,56 @@ export interface Book {
   coverUrl: string;
   googleDocsUrl: string;
   description?: string;
+  status?: string;
 }
 
 interface BookCardProps {
   book: Book;
+  index?: number;
 }
 
-const BookCard = ({ book }: BookCardProps) => {
+const BookCard = ({ book, index = 0 }: BookCardProps) => {
   return (
-    <div className="group relative">
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-40px" }}
+      transition={{ duration: 0.6, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
+      className="group"
+    >
       <Link to={`/reader/${book.id}`} className="block">
-        <div className="relative aspect-[2/3] overflow-hidden rounded-sm book-shadow transition-all duration-300 group-hover:book-shadow-hover group-hover:-translate-y-2">
+        <motion.div
+          whileHover={{ y: -8 }}
+          transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+          className="relative aspect-[2/3] overflow-hidden rounded-[3px] book-shadow group-hover:book-shadow-hover transition-shadow duration-500"
+        >
           <img
             src={book.coverUrl}
             alt={book.title}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.04]"
           />
-          {/* Subtle overlay on hover */}
-          <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/10 transition-colors duration-300" />
+          {/* soft warm glaze */}
+          <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 via-transparent to-transparent opacity-60" />
+          {/* thin inner border */}
+          <div className="absolute inset-0 ring-1 ring-inset ring-foreground/5" />
+        </motion.div>
+
+        <div className="mt-4 space-y-1">
+          <h3 className="font-serif text-[15px] leading-snug text-foreground line-clamp-2">
+            {book.title}
+          </h3>
+          <div className="flex items-center gap-2 text-[11px] tracking-[0.14em] uppercase text-muted-foreground">
+            <span>by {book.author}</span>
+            {book.status && (
+              <>
+                <span className="h-[3px] w-[3px] rounded-full bg-muted-foreground/60" />
+                <span className="text-accent/80">{book.status}</span>
+              </>
+            )}
+          </div>
         </div>
       </Link>
-
-      <div className="mt-4 space-y-1">
-        <h3 className="font-serif text-base font-medium text-foreground leading-tight line-clamp-2">
-          {book.title}
-        </h3>
-        <p className="font-sans text-xs text-muted-foreground tracking-wide">
-          by {book.author}
-        </p>
-      </div>
-
-      {/* Quick action to open in new tab */}
-      <a
-        href={book.googleDocsUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="absolute top-2 right-2 p-2 bg-background/90 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 hover:bg-accent hover:text-accent-foreground"
-        aria-label="Open in new tab"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <ExternalLink size={14} />
-      </a>
-    </div>
+    </motion.div>
   );
 };
 
