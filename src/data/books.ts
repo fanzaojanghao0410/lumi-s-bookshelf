@@ -18,10 +18,10 @@ export const books: Book[] = [
   },
   {
     id: "between-stars",
-    title: "Between the Stars",
+    title: "Ars Mutandi",
     author: "Ojan",
     coverUrl: betweenStars,
-    googleDocsUrl: "https://docs.google.com/document/d/19aj5idgNEBKyfCeaXVtJt6AwpY1h9whHry3_IeHXSAA/edit?usp=sharing",
+    googleDocsUrl: "https://docs.google.com/document/d/1Y_oAdAlinq1RGTMMfMKEWrGiy1B1bzJb9MlO3O8HT1M/edit?usp=drivesdk",
     description: "Short stories about the spaces we occupy in others' lives.",
   },
   {
