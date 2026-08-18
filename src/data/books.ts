@@ -17,7 +17,7 @@ export const books: Book[] = [
     description: "A collection of thoughts gathered in the stillness before dawn.",
   },
   {
-    id: "between-stars",
+    id: "ars-mutandi",
     title: "Ars Mutandi",
     author: "Ojan",
     coverUrl: betweenStars,
