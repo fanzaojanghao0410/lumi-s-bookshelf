@@ -7,6 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Index from "./pages/Index";
 import Library from "./pages/Library";
 import Reader from "./pages/Reader";
+import BookDetail from "./pages/BookDetail";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
