@@ -40,7 +40,7 @@ const About = () => {
             <motion.div
               {...fadeUp}
               transition={{ duration: 0.9 }}
-              className="md:col-span-4 mx-auto md:mx-0 w-full max-w-[240px] md:max-w-none"
+              className="md:col-span-4 mx-auto md:mx-0 w-full max-w-[180px] md:max-w-[210px]"
             >
               <div className="relative">
                 <div className="absolute -inset-2 bg-accent/10 rounded-sm rotate-[-1.5deg]" aria-hidden="true" />

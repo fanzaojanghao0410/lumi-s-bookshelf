@@ -7,6 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Index from "./pages/Index";
 import Library from "./pages/Library";
 import Reader from "./pages/Reader";
+import BookDetail from "./pages/BookDetail";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
@@ -30,6 +31,7 @@ const AnimatedRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<PageWrap><Index /></PageWrap>} />
         <Route path="/library" element={<PageWrap><Library /></PageWrap>} />
+        <Route path="/book/:bookId" element={<PageWrap><BookDetail /></PageWrap>} />
         <Route path="/reader/:bookId" element={<Reader />} />
         <Route path="/about" element={<PageWrap><About /></PageWrap>} />
         <Route path="*" element={<PageWrap><NotFound /></PageWrap>} />
