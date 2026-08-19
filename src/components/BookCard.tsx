@@ -28,7 +28,7 @@ const BookCard = ({ book, index = 0 }: BookCardProps) => {
       transition={{ duration: 0.6, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
       className="group"
     >
-      <Link to={`/reader/${book.id}`} className="block">
+      <Link to={`/book/${book.id}`} className="block">
         <motion.div
           whileHover={{ y: -8 }}
           transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
