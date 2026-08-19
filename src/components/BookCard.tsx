@@ -8,6 +8,9 @@ export interface Book {
   coverUrl: string;
   googleDocsUrl: string;
   description?: string;
+  synopsis?: string;
+  genre?: string;
+  releaseDate?: string;
   status?: string;
 }
 
