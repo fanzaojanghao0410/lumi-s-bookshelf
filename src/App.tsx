@@ -31,6 +31,7 @@ const AnimatedRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<PageWrap><Index /></PageWrap>} />
         <Route path="/library" element={<PageWrap><Library /></PageWrap>} />
+        <Route path="/book/:bookId" element={<PageWrap><BookDetail /></PageWrap>} />
         <Route path="/reader/:bookId" element={<Reader />} />
         <Route path="/about" element={<PageWrap><About /></PageWrap>} />
         <Route path="*" element={<PageWrap><NotFound /></PageWrap>} />
