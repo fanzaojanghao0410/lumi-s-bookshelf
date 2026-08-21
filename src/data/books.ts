@@ -10,8 +10,8 @@ import adaJogjaDiBandung from "@/assets/covers/ada-jogja-di-bandung.jpg";
 export const books: Book[] = [
   {
     id: "ada-jogja-di-bandung",
-    genre: "Fiksi · Romansa",
-    releaseDate: "2026",
+    genre: "Fiction · Romance",
+    releaseDate: "April 2026",
     title: "Ada Jogja di Bandung",
     author: "Ojan",
     coverUrl: adaJogjaDiBandung,
@@ -20,8 +20,8 @@ export const books: Book[] = [
   },
   {
     id: "ars-mutandi",
-    genre: "Self improvement · Refleksi",
-    releaseDate: "2026",
+    genre: "Self improvement · Reflection",
+    releaseDate: "August 2026",
     title: "Ars Mutandi",
     author: "Ojan",
     coverUrl: arsMutandi,
@@ -31,7 +31,7 @@ export const books: Book[] = [
   {
     id: "letters-unsent",
     genre: "Prosa · Surat",
-    releaseDate: "2025",
+    releaseDate: "Coming soon",
     title: "Letters Unsent",
     author: "Ojan",
     coverUrl: lettersUnsent,
@@ -41,7 +41,7 @@ export const books: Book[] = [
   {
     id: "paper-boats",
     genre: "Prosa · Memoar",
-    releaseDate: "2024",
+    releaseDate: "Coming soon",
     title: "Paper Boats",
     author: "Ojan",
     coverUrl: paperBoats,
@@ -51,7 +51,7 @@ export const books: Book[] = [
   {
     id: "shadow-garden",
     genre: "Puisi",
-    releaseDate: "2024",
+    releaseDate: "Coming soon",
     title: "The Shadow Garden",
     author: "Ojan",
     coverUrl: shadowGarden,
@@ -61,7 +61,7 @@ export const books: Book[] = [
   {
     id: "amber-hours",
     genre: "Cerita Pendek",
-    releaseDate: "2023",
+    releaseDate: "Coming soon",
     title: "Amber Hours",
     author: "Ojan",
     coverUrl: amberHours,
