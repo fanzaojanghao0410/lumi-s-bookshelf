@@ -1,5 +1,5 @@
 import { Book } from "@/components/BookCard";
-import betweenStars from "@/assets/covers/between-stars.jpg";
+import arsMutandi from "@/assets/covers/ars-mutandi.png";
 import lettersUnsent from "@/assets/covers/letters-unsent.jpg";
 import paperBoats from "@/assets/covers/paper-boats.jpg";
 import shadowGarden from "@/assets/covers/shadow-garden.jpg";
@@ -24,7 +24,7 @@ export const books: Book[] = [
     releaseDate: "2026",
     title: "Ars Mutandi",
     author: "Ojan",
-    coverUrl: betweenStars,
+    coverUrl: arsMutandi,
     googleDocsUrl: "https://docs.google.com/document/d/1Ts3NJaeTZlsiAAwZlLqon5zp4QkoBccaCPq47-iAH8Q/edit?usp=drivesdk",
     description: "How to change without losing yourself? Adaptation is an art.",
   },
